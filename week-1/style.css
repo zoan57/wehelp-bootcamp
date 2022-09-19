@@ -1,0 +1,47 @@
+body {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+header {
+    display: flex;
+    flex-basis: auto;
+    height: 30px;
+    justify-content: space-between;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: bisque;
+    margin-top: 1% auto;
+}
+
+article {
+    width: 1200px;
+    display: grid;
+    grid-template: 50px 1fr / 1fr 1fr;
+    background-color: aliceblue;
+    margin: 2% auto;
+}
+
+img {
+    max-width: 250px;
+}
+
+.promotionItem {
+    background-color: lightpink;
+    display: flex;
+    align-items: center;
+}
+
+.recommendation {
+    background-color: lightgreen;
+    display: grid;
+    grid-template: 1fr 1fr /1fr 1fr;
+}
