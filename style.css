@@ -1,133 +1,133 @@
-            body {
-                font-size: 20px;
-            }
-            
-            h1 {
-                font-size: 2rem;
-            }
-            
-            header {
-                display: flex;
-                height: 50px;
-                justify-content: space-between;
-                align-items: center;
-                margin: 1% 2%;
-            }
-            
-            header>span {
-                font-family: Georgia, 'Times New Roman', Times, serif;
-                font-size: 1.5rem;
-            }
-            
-            section {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 300px;
-                background-color: bisque;
-                margin-top: auto;
-            }
-            
-            img {
-                max-width: 100%;
-                height: auto;
-            }
-            
-            button {
-                background-color: transparent;
-                border: none;
-            }
-            
-            .menu {
-                padding-right: 10px;
-            }
-            
-            .navbar {
-                display: none;
-                height: 50px;
-                width: 50px;
-            }
-            
-            .promotion {
-                display: flex;
-                width: 1200px;
-                flex-wrap: wrap;
-                margin: 1% auto 20px auto;
-                gap: 15px;
-            }
-            
-            .promotionItem {
-                display: flex;
-                flex-grow: 1;
-                align-items: center;
-                background-color: aquamarine;
-            }
-            
-            .promotionItem>span {
-                padding-left: 3%;
-            }
-            
-            .promotionPic {
-                width: 80px;
-                height: 50px;
-            }
-            
-            .recommendation {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                gap: 10px;
-                width: 1200px;
-                margin: 20px auto;
-            }
-            
-            .item {
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                flex-basis: 290px;
-                background-color: aquamarine;
-            }
-            
-            .item>span {
-                padding: 2% 0;
-            }
-            
-            @media screen and (max-width: 1200px) {
-                .promotion {
-                    width: 90%;
-                    margin: 3% auto;
-                    display: flex;
-                    flex-direction: row;
-                }
-                .promotionItem {
-                    flex-grow: 1;
-                }
-                .recommendation {
-                    width: 90%;
-                }
-                .item {
-                    flex-basis: 49%;
-                }
-            }
-            
-            @media screen and (max-width:600px) {
-                .menu {
-                    display: none;
-                    background-image: url(img/134216_menu_lines_hamburger_icon.png);
-                }
-                .navbar {
-                    display: block;
-                }
-                .promotion {
-                    flex-direction: column;
-                }
-                .recommendation {
-                    width: 90%;
-                }
-                .item {
-                    flex-basis: 100%;
-                }
-            }
+body {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+header {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1% 2%;
+}
+
+header>span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: bisque;
+    margin-top: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.menu {
+    padding-right: 10px;
+}
+
+.navbar {
+    display: none;
+    height: 50px;
+    width: 50px;
+}
+
+.promotion {
+    display: flex;
+    width: 1200px;
+    flex-wrap: wrap;
+    margin: 1% auto 20px auto;
+    gap: 15px;
+}
+
+.promotionItem {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.promotionItem>span {
+    padding-left: 3%;
+}
+
+.promotionPic {
+    width: 80px;
+    height: 50px;
+}
+
+.recommendation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    width: 1200px;
+    margin: 20px auto;
+}
+
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-basis: 290px;
+    background-color: aquamarine;
+}
+
+.item>span {
+    padding: 2% 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .promotion {
+        width: 90%;
+        margin: 3% auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .promotionItem {
+        flex-grow: 1;
+    }
+    .recommendation {
+        width: 90%;
+    }
+    .item {
+        flex-basis: 49%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .menu {
+        display: none;
+        background-image: url(img/134216_menu_lines_hamburger_icon.png);
+    }
+    .navbar {
+        display: block;
+    }
+    .promotion {
+        flex-direction: column;
+    }
+    .recommendation {
+        width: 90%;
+    }
+    .item {
+        flex-basis: 100%;
+    }
+}
