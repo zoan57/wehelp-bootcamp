@@ -117,7 +117,6 @@ button {
 @media screen and (max-width:600px) {
     .menu {
         display: none;
-        background-image: url(img/134216_menu_lines_hamburger_icon.png);
     }
     .navbar {
         display: block;
