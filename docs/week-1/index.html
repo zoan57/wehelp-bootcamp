@@ -6,19 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
     <title>Week-1:RWD test</title>
 </head>
 
-<body>
+<body onload="getData()">
     <!--HEADER-->
     <header>
-        <span>My website</span>
-        <div>
-            <a href="#" class=" navbar "><img src="img/navbar-burger-sm.png"></a>
-            <a href="# " class="menu ">Item1</a>
-            <a href="# " class="menu ">Item2</a>
-            <a href="# " class="menu ">Item3 </a>
-            <a href="# " class="menu ">Item3 </a>
+        <div class="header">
+            <span>My website</span>
+            <div class="toggleMenu">
+
+                <div class="toggle" onclick="toggleMenu()"><img class="navbar" src="img/navbar-burger-sm.png"></div>
+                <ul class="menu" id="menu" style="display: none;">
+                    <li>Item1</li>
+                    <li>Item2</li>
+                    <li>Item3</li>
+                    <li>Item4</li>
+                </ul>
+                <a href="# " class="menu ">Item1</a>
+                <a href="# " class="menu ">Item2</a>
+                <a href="# " class="menu ">Item3 </a>
+                <a href="# " class="menu ">Item3 </a>
+            </div>
         </div>
     </header>
 
@@ -29,66 +39,48 @@
 
     <!--PHOTO GALLERY-->
     <div>
-        <div class="promotion ">
-            <div class="promotionItem ">
-                <img src="img/template-photo.jpg" class=" promotionPic " alt="範例照片 ">
-                <span>Promotion 1</span>
+        <div class="promotion">
+            <div class="promotionItem" id="title-0" onload="add(0)">
             </div>
-            <div class="promotionItem ">
-                <img src="img/template-photo.jpg" class=" promotionPic " alt="範例照片 ">
-                <span>Promotion 2</span>
+
+            <div class="promotionItem" id="title-1" onload="add(1)">
             </div>
         </div>
 
         <div class="recommendation ">
-            <div class="item ">
-                <img src="img/template-photo.jpg" class=" promotionPic " alt="範例照片 ">
-                <img class="star-sign" src="img/star.png" alt="#">
-                <span>Title 1</span>
+            <div class="item" id="title-2" onload="add(2)">
+
             </div>
-            <div class="item ">
-                <img src="img/template-photo.jpg" class=" promotionPic " alt="範例照片 ">
-                <img class="star-sign" src="img/star.png" alt="#">
-                <span>Title 2</span>
+            <div class="item" id="title-3" onload="add(3)">
+
             </div>
-            <div class="item ">
-                <img src="img/template-photo.jpg" class=" promotionPic " alt="範例照片 ">
-                <img class="star-sign" src="img/star.png" alt="#">
-                <span>Title 3</span>
+            <div class="item" id="title-4" onload="add(4)">
+
             </div>
-            <div class="item ">
-                <img src="img/template-photo.jpg" class=" promotionPic " alt="範例照片 ">
-                <img class="star-sign" src="img/star.png" alt="#">
-                <span>Title 4</span>
+            <div class="item" id="title-5" onload="add(5)">
+
             </div>
 
         </div>
 
-        <div class="recommendation ">
-            <div class="item ">
-                <img src="img/template-photo.jpg" class=" promotionPic " alt="範例照片 ">
-                <img class="star-sign" src="img/star.png" alt="#">
-                <span>Title 5</span>
+        <div class="recommendation">
+            <div class="item" id="title-6" onload="add(6)">
+
             </div>
-            <div class="item ">
-                <img src="img/template-photo.jpg" class=" promotionPic " alt="範例照片 ">
-                <img class="star-sign" src="img/star.png" alt="#">
-                <span>Title 6</span>
+            <div class="item" id="title-7" onload="add(7)">
+
             </div>
-            <div class="item ">
-                <img src="img/template-photo.jpg" class=" promotionPic " alt="範例照片 ">
-                <img class="star-sign" src="img/star.png" alt="#">
-                <span>Title 7</span>
+            <div class="item" id="title-8" onload="add(8)">
+
             </div>
-            <div class="item ">
-                <img src="img/template-photo.jpg" class=" promotionPic " alt="範例照片 ">
-                <img class="star-sign" src="img/star.png" alt="#">
-                <span>Title 8</span>
+            <div class="item" id="title-9" onload="add(9)">
+
             </div>
         </div>
 
 
         </article>
+
 </body>
 
 </html>
