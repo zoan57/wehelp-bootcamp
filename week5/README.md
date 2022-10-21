@@ -79,3 +79,4 @@ SELECT member.username, FLOOR(AVG(message.like_count)) FROM member
 INNER JOIN message ON member.id=message.member_id WHERE member.username='test'  ORDER BY member.id;
 ```
 # SQL 指令截圖如下
+![1](/gh-pages/images/3-2.png)
