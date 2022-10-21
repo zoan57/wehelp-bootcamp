@@ -35,9 +35,11 @@ def signout():
 
 # MEMBER
 @app.route("/member")
-def member():
-    name=session["user"]
-    return render_template("member.html", data=name)
+def member():    
+    if 'user' in session:
+        name=session["user"]
+        return render_template("member.html", data=name)
+    return redirect(url_for('index'))
 
 # ERROR
 @app.route("/error", methods=["GET"])
