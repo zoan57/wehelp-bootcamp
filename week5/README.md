@@ -1,9 +1,9 @@
-==程式碼如下==
+程式碼如下[^1]
 ```sql
 SHOW DATABASES;
 SHOW TABLES;
 
-#要求⼆：建立資料庫和資料表 [^1]
+#要求⼆：建立資料庫和資料表 
 CREATE DATABASE website;
 USE website;
 CREATE TABLE member(
