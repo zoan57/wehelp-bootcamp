@@ -81,13 +81,29 @@ INNER JOIN message ON member.id=message.member_id WHERE member.username='test'  
 # SQL 指令截圖如下
 ### 要求三：SQL CRUD
 #### 使⽤ SELECT 指令取得所有在 member 資料表中的會員資料
+```sql
+SELECT * FROM member;
+```
 ![3-2](/week5/images/3-2.png)
+
 #### 使⽤ SELECT 指令取得所有在 member 資料表中的會員資料，並按照 time 欄位，由近到遠排序。
+```sql
+SELECT * FROM member ORDER BY time ASC;
+```
 ![3-3](/week5/images/3-2.png)
+
 #### 使⽤ SELECT 指令取得 member 資料表中第 2 ~ 4 共三筆資料，並按照 time 欄位，由近到遠排序。 ( 並非編號 2、3、4 的資料，⽽是排序後的第 2 ~ 4 筆資料 )
+```sql
+SELECT * FROM member ORDER BY time ASC limit 1,3;
+```
 ![3-4](/week5/images/3-2.png)
+
 #### 使⽤ SELECT 指令取得欄位 username 是 test的資料
+```sql
+SELECT * FROM member WHERE username='test';
+```
 ![3-5](/week5/images/3-2.png)
+
 #### 使⽤ SELECT 指令取得欄位 username 是 test、且欄位 password 也是 test 的資料
 ![3-6](/week5/images/3-2.png)
 #### 使⽤ UPDATE 指令更新欄位 username 是 test 的會員資料，將資料中的 name 欄位改成 test2
