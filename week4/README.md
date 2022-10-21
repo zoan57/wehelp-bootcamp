@@ -1,5 +1,4 @@
-```
-SQL=
+```SQL
 SHOW DATABASES;
 SHOW TABLES;
 
