@@ -1,5 +1,5 @@
 ```
-mySQL=
+SQL=
 SHOW DATABASES;
 SHOW TABLES;
 
