@@ -1,4 +1,4 @@
-#程式碼如下
+# 程式碼如下
 ```sql
 SHOW DATABASES;
 SHOW TABLES;
@@ -78,4 +78,4 @@ INNER JOIN message ON member.id=message.member_id WHERE member.username='test' O
 SELECT member.username, FLOOR(AVG(message.like_count)) FROM member
 INNER JOIN message ON member.id=message.member_id WHERE member.username='test'  ORDER BY member.id;
 ```
-==SQL 指令截圖如下==
+# SQL 指令截圖如下
