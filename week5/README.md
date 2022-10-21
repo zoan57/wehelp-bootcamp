@@ -1,5 +1,5 @@
 <h3>程式碼如下</h3>
-<pre>sql
+<pre>sql=
 SHOW DATABASES;
 SHOW TABLES;
 
