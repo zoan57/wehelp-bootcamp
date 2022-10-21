@@ -1,4 +1,4 @@
-程式碼如下[^1]
+#程式碼如下
 ```sql
 SHOW DATABASES;
 SHOW TABLES;
