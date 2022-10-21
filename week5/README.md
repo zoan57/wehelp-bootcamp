@@ -1,5 +1,5 @@
 <h3>程式碼如下</h3>
-````sql
+<pre>sql
 SHOW DATABASES;
 SHOW TABLES;
 
@@ -77,5 +77,5 @@ INNER JOIN message ON member.id=message.member_id WHERE member.username='test' O
 #使⽤ SELECT、SQL Aggregate Functions 搭配 JOIN 語法，取得 member 資料表中欄位 username 是 test 的所有留⾔平均按讚數。
 SELECT member.username, FLOOR(AVG(message.like_count)) FROM member
 INNER JOIN message ON member.id=message.member_id WHERE member.username='test'  ORDER BY member.id;
-````
+</pre>
 <h3>SQL 指令截圖如下</h3>
