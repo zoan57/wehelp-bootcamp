@@ -3,7 +3,7 @@
 SHOW DATABASES;
 SHOW TABLES;
 
-#要求⼆：建立資料庫和資料表
+#要求⼆：建立資料庫和資料表 [^1]
 CREATE DATABASE website;
 USE website;
 CREATE TABLE member(
