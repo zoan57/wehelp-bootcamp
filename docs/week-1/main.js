@@ -7,7 +7,7 @@ function getData() {
         function add(number) {
             // ADD IMAGE //
             let newPromotion = document.createElement('img');
-            newPromotion.src = output[number]["file"].split("jpg")[0] + "jpg";
+            newPromotion.src = "https" + output[number]["file"].split("https")[1];
             console.log(newPromotion);
             document.getElementById('title-' + number).appendChild(newPromotion);
 
@@ -18,16 +18,11 @@ function getData() {
             title.appendChild(titleText);
             document.getElementById('title-' + number).appendChild(title);
         };
-        add(0)
-        add(1)
-        add(2)
-        add(3)
-        add(4)
-        add(5)
-        add(6)
-        add(7)
-        add(8)
-        add(9)
+        for (let i = 0; i < 10; i++) {
+            add(i)
+        }
+
+
 
         //以下如果只要取2015年以後的資料。
         //但到底要怎樣才可以只取2015年以後，還能個別放入id裡...
