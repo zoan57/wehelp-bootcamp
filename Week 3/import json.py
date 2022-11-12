@@ -9,9 +9,9 @@ output = data["result"]["results"]
 with open("data.csv", "w" , encoding="utf-8") as file:
     for titles in output:
         if int(titles["xpostDate"][0:4]) >= 2015:
-            picture = titles["file"].split("jpg")
+            picture = titles["file"].split("https")
             file.write(titles["stitle"]+",")
             file.write(titles["address"][5:8]+",")
             file.write(titles["longitude"]+",")
             file.write(titles["latitude"]+",")
-            file.write(picture[0]+"jpg"+"\n")
+            file.write("https"+picture[1]+"\n")
