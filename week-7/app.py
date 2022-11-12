@@ -9,7 +9,7 @@ from mysql.connector import (connection)
 app= Flask (__name__, static_folder="static", static_url_path="/")
 app.secret_key="try it"
 
-cnx = connection.MySQLConnection(user='root', password='Z57An1344',
+cnx = connection.MySQLConnection(user='root', password='',
                                 host='127.0.0.1',
                                 database='website')
 cursor=cnx.cursor
@@ -23,14 +23,7 @@ try:
         cursor.execute("SELECT DATABASE();")
         record = cursor.fetchone()
         print("目前使用的資料庫：", record)
-        
-        cursor.execute("SELECT id,username,password FROM member")
-        for i in cursor:
-            print(i)
-        # 測試留言的呈現 
-        #cursor.execute("SELECT member_id,name, username FROM member INNER JOIN message ON member.id=message.member_id ORDER BY member.id;")
-        #for c in cursor:
-        #    print(c)
+
         
 except mysql.connector.Error as err:
   if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
@@ -55,9 +48,6 @@ def signup():
     reg_name=request.form['name']
     cursor.execute("SELECT * FROM member WHERE username = %s",(reg_acct,))
     account=cursor.fetchone()
-    print(reg_acct)
-    print(reg_name)
-    print(reg_pwd)
     if account:
         message=request.args.get("message", "帳號已經被註冊！") 
         return redirect(url_for("error", message=message))
@@ -82,8 +72,6 @@ def signin():
         session["name"]=account[1]
         session["user"]=account[3]
         session["signin"]=True
-        print(session["user"])
-        print(session["id"])
         return redirect("/member")
     elif len(acct)==0 or len(pword)==0:
         message=request.args.get("message", "請輸入帳號及密碼！") 
