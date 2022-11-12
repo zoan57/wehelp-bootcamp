@@ -138,6 +138,7 @@ def json_api():
             }})
     else:
         return jsonify({"data":None})
+    
 # API UPADATE USER
 @app.route("/api/member", methods=["PATCH"])
 def update_name():

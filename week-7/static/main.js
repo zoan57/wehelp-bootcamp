@@ -31,7 +31,3 @@ function updateUser() {
             document.getElementById("updateResult").innerHTML = "更新失敗"
         })
 }
-
-/* function updateName() {
-let name = document.getElementById("updateName").value;
-} */
