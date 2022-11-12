@@ -142,17 +142,19 @@ def json_api():
 # API UPADATE USER
 @app.route("/api/member", methods=["PATCH"])
 def update_name():
-    if 'user' in session:
-        id=session['id']
-        r=request.get_json()
-        name=r['name']
-        if name != None:
-            user=session['user']
-            sql = "UPDATE member SET name='%s' WHERE username='%s'" %(name,user)
-            cursor.execute(sql)
-            return jsonify({"ok":True})
-    else:
+    try:
+        if 'user' in session:
+            id=session['id']
+            r=request.get_json()
+            name=r['name']
+            if name != None:
+                user=session['user']
+                sql = "UPDATE member SET name='%s' WHERE username='%s'" %(name,user)
+                cursor.execute(sql)
+                return jsonify({"ok":True})
+        else:
+            return jsonify({"error":True})
+    except:
         return jsonify({"error":True})
-        
     
 app.run(port=3000)
